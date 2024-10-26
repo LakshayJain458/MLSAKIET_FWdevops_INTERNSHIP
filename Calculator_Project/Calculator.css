@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(145deg, #1e1e2f, #28293e);
+  color: #ffffff;
+}
+
+.calculator {
+  width: 320px;
+  background: #2f3142;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+#display {
+  background-color: #1b1b29;
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 20px;
+  border-bottom: 2px solid #2f3142;
+  height: 80px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+button {
+  background: #43455b;
+  color: #e0e0e0;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  transition: background 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button.clear {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+
+button.equal {
+  background-color: #4caf50;
+  color: #ffffff;
+  grid-column: span 2;
+}
+
+button.operation {
+  color: #ffffff;
+}
+
+button.operation.addition {
+  background-color: #f09a36;
+}
+
+button.operation.subtraction {
+  background-color: #e67e22;
+}
+
+button.operation.multiplication {
+  background-color: #3498db;
+}
+
+button.operation.division {
+  background-color: #9b59b6;
+}
+
+button:hover {
+  background-color: #5a5c7a;
+}
+
+button.clear:hover {
+  background-color: #ff6b5b;
+}
+
+button.equal:hover {
+  background-color: #5fd774;
+}
+
+button.operation.addition:hover {
+  background-color: #f5a963;
+}
+
+button.operation.subtraction:hover {
+  background-color: #f39c59;
+}
+
+button.operation.multiplication:hover {
+  background-color: #5dade2;
+}
+
+button.operation.division:hover {
+  background-color: #af7ac5;
+}
